@@ -1,22 +1,27 @@
-# Welcome to My Url Shortener
+# Welcome to My URL Shortener
 ***
 
 ## Task
-TODO - What is the problem? And where is the challenge?
+Build a mock up of a URL shortening service using a SQL database to store URL pairings.
 
 ## Description
-TODO - How have you solved the problem?
+URL Shortening is a technique used by services like `bit.ly` to create smaller, more easily readable, and more memorable URLs to replace long, or very specific URLs.
 
 ## Installation
-TODO - How to install your project? npm install? make? make re?
+Requires a working installation of golang. See go.dev for details. Run `make` command in the root of the repo. Compiled binary will be created at `bin/my_url_shortener`.
 
 ## Usage
-TODO - How does it work?
 ```
-./my_project argument1 argument2
+./my_url_shortener [-a | --add] [-t | --translate] <url>
+    -a, --add <url>
+        Adds <url> to the the database, then creates a paired short url. The new short url is printed to stdout.
+
+    -t, --translate <url>
+        Translates a shortened url into it's original, long counterpart. Prints original url to stdout.
 ```
 
 ### The Core Team
+Leo Tanenbaum-Diaz
 
 
 <span><i>Made at <a href='https://qwasar.io'>Qwasar Silicon Valley</a></i></span>
